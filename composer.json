@@ -1,0 +1,17 @@
+{
+    "name": "christian.dominguez/symfony-api",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "ChristianDominguez\\SymfonyApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christian Dominguez",
+            "email": "christian.dominguez@inseego.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
