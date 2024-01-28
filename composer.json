@@ -12,6 +12,5 @@
             "email": "christian.dominguez@inseego.com"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {}
+    "minimum-stability": "stable"
 }

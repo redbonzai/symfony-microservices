@@ -1,30 +1,8 @@
 # SYNFONY Microservices POC
 
-### DIRECTORY STRUCTURE:
-
-your-project/
-│
-├── packages/
-│   ├── Reservations/
-│   │   └── (Symfony structure for Reservations service)
-│   ├── Auth/
-│   │   └── (Symfony structure for Auth service)
-│   ├── Permissions/
-│   │   └── (Symfony structure for Permissions service)
-│   ├── Payments/
-│   │   └── (Symfony structure for Payments service)
-│   └── Notifications/
-│       └── (Symfony structure for Notifications service)
-│
-└── libs/
-├── SharedLibrary1/
-└── SharedLibrary2/
-
-Designing a microservices architecture for a system like the one you've described requires careful planning. Let's outline an effective file structure for these microservices using Symfony, and decide on shared resources.
-
 ### Directory Structure:
 
-Considering the double root strategy, your directory structure could look something like this:
+Considering the double root strategy, the directory structure has the following format:
 
 ```
 your-project/
@@ -91,7 +69,7 @@ The `libs` directory will contain shared libraries or modules that are used acro
 - **Security**: Ensure secure communication between services, especially for sensitive operations in the Auth and Payments services.
 - **Testing**: Plan for unit and integration testing for each service.
 
-### Synfony Specifics:
+### Symfony Specifics:
 
 - Use Symfony's bundle system to encapsulate the logic of each microservice.
 - Leverage Symfony's security component for the Auth service.
@@ -153,4 +131,10 @@ Apache Kafka serves as the backbone for an event-driven architecture.
 - **Local Development**: For development purposes, you can run RabbitMQ, Kafka, and the gRPC environment using Docker containers.
 - **Testing**: Test inter-service communication thoroughly, including testing the behavior under failure conditions.
 
-By combining gRPC for direct service-to-service calls, RabbitMQ for asynchronous tasks, and Kafka for event-driven communication, you are setting up a powerful, scalable, and flexible microservices architecture. This approach allows you to leverage the strengths of each technology and create a system that can handle a wide range of communication patterns and use cases.
+By combining gRPC for direct service-to-service calls, RabbitMQ for asynchronous tasks, and Kafka for event-driven communication, we are setting up a powerful, scalable, and flexible microservices architecture. This approach allows us to leverage the strengths of each technology and create a system that can handle a wide range of communication patterns and use cases.
+
+### Watching Containers for Changes
+
+- **WatchTower**: Watchtower is an application that will monitor your running Docker containers and watch for changes to the images that those containers were originally started from. If watchtower detects that an image has changed, it will automatically restart the container using the new image.
+
+### API Documentation

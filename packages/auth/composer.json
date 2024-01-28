@@ -3,7 +3,7 @@
     "license": "proprietary",
     "minimum-stability": "stable",
     "prefer-stable": true,
-    "require": {
+     "require": {
         "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
@@ -25,6 +25,8 @@
         "symfony/serializer": "7.0.*",
         "symfony/validator": "7.0.*",
         "symfony/yaml": "7.0.*"
+    },
+    "require-dev": {
     },
     "config": {
         "allow-plugins": {
@@ -74,9 +76,5 @@
             "allow-contrib": false,
             "require": "7.0.*"
         }
-    },
-    "require-dev": {
-        "symfony/maker-bundle": "^1.52",
-        "symfony/phpunit-bridge": "^7.0"
     }
 }
