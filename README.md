@@ -1,4 +1,4 @@
-# SYNFONY Microservices POC
+# Symfony Microservices POC
 
 ### Directory Structure:
 
