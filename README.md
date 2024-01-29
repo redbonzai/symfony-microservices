@@ -5,7 +5,7 @@
 Considering the double root strategy, the directory structure has the following format:
 
 ```
-your-project/
+symfony-microservices/
 │
 ├── packages/
 │   ├── Reservations/
